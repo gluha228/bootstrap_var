@@ -1,103 +1,14 @@
-body {
-    background: #333;
-    margin: 0;
-    color: #888;
-    font-family: 'Courier New', Courier, monospace;
-}
-a {
-    text-decoration: none !important;
-}
-.article {
-    background-color: #444;
-    color: #999;
-    font-size: 20px;
-    cursor: pointer;
-    border-top: rgb(184, 121, 4) 1px solid;
-}
-.article:hover {
-    font-size: 22px
-} 
-.subarticle {
-    background-color: #555;
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    color: #aaa;
-    width: 100%;
-    font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    border: 0;
-    text-align: left;
-    text-decoration: none;
-    cursor: pointer;
-}
-.subarticle:hover {
-    font-size: 17px;
-}
-.main-content {
-    top: 50px;
-    background-color: #666;
-    color: #bbb;
-    display: grid;
-    padding-left: 20px;
-}
-.header-logo {
-    font-size: 50px;
-    font-weight: 1000;
-    color: #111;
-    background: url("images/header-background.jpg");
-    background-attachment: fixed;
-    width: 100%;
-    height: 50px;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-column-gap: 10px;
-}
-.sidebar {
-    float: left;
-    top: 0%;
-    left: 0%;
-    top: 50px;
-    width: 200px;
-    border-right: rgb(184, 121, 4) 2px  solid;
-}
-.style-switch {
-    width: 50%;
-    height: 30px;
-    text-align: center;
-    background-color:#333;
-    color: #bbb;
-}
-.menu-button {
-    height: 50px;
-    width: 50px;
-    display: grid;
-    padding: 0px;
-    border: 0px;
-    cursor: pointer;
-}
-.menu-button:hover {
-    background-color: rgba(120,120,120, 0.5);
-}
-
-
 
 .items {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    grid-template-columns: repeat(5, 1fr);
 }
+
 .collection-item {
-    background-color: #555;
     padding: 2%;
     margin: 10px;
-    color: #ccc;
-    font-size: 80%;
-    height: 200px;
-    width: 500px;
-    display:grid;
-    grid-template-columns: 2fr 3fr;
-    column-gap: 5px;
     border-left:rgb(184, 121, 4) solid 1px;
     border-right:rgb(184, 121, 4) solid 1px;
 }
@@ -113,16 +24,22 @@ a {
 .collection-item tr {
     height: 80%;
 }
-.collection-item h3 {
+.collection-item a, h3 {
     font-size: 160%;
-    text-decoration: underline rgb(184, 121, 4);
+    color: rgb(184, 121, 4) !important;
+    text-decoration: none;
     cursor: pointer;
+    padding: 0%;
+    margin: 0%;
+    font-size: 130%;
 }
 .collection-item h3:hover {
     text-decoration: underline rgb(204, 141, 44);
     color: rgb(204, 141, 44);
 }
-
+.card-body {
+    padding-top: 0%;
+}
 
 .filter-pad {
     border:rgb(184, 121, 4) solid 1px;

@@ -1,9 +1,3 @@
-document.querySelector('.sidebar').hidden = true;
-function getmenu(){
-    let doc = document.querySelector('.sidebar');
-    if (doc.hidden === true) { doc.hidden = false
-    } else { doc.hidden = true}
-}
 const itemsSourse = [
     ["Vostok precision class", "Urss", 1965, "Wristwatch", "Wostok 2809", "Wostok", "Swiss", "Manual","0"],
     ["Volna", "Urss", 1960, "Wristwatch", "Wostok 2809A", "ChChZ", "Swiss", "Manual","1"],
@@ -42,19 +36,23 @@ function assignItems(){
 if (items != null) {
     for (var itemId = 0;  itemId<itemsSourse.length; itemId++) {
     items.insertAdjacentHTML("beforeend",
-    '<div class="collection-item"><img src="images/watches/'+itemsSourse[itemsOrder[itemId]][8]+'.jpg" alt="watch"><table><caption><a href="'+itemsSourse[itemsOrder[itemId]][8]+'.html"><h3>'+itemsSourse[itemsOrder[itemId]][0]+
-    '</h3></caption><tbody><tr><td>Manufacturer</td><td>'+itemsSourse[itemsOrder[itemId]][1]+
-    '</td></tr><tr><td>Production year</td><td>'+itemsSourse[itemsOrder[itemId]][2]+
+    '<div class="card collection-item" style="width: 20rem;"><img src="images/watches/'
+    +itemsSourse[itemsOrder[itemId]][8]+'.jpg" class="card-img-top" alt="watch">'+
+    '<div class="card-body"><p class="card-text"><a href="'+itemsSourse[itemsOrder[itemId]][8]+'.html"><h3>'
+    +itemsSourse[itemsOrder[itemId]][0]+
+    '</h3></a><table class="table table-striped table-hover"><tbody><tr><td>Manufacturer</td><td>'
+    +itemsSourse[itemsOrder[itemId]][1]+'</td></tr><tr><td>Production year</td><td>'+itemsSourse[itemsOrder[itemId]][2]+
     '</td></tr><tr><td>Type</td><td>'+itemsSourse[itemsOrder[itemId]][3]+
     '</td></tr><tr><td>Caliber</td><td>'+itemsSourse[itemsOrder[itemId]][4]+
     '</td></tr><tr><td>Brand</td><td>'+itemsSourse[itemsOrder[itemId]][5]+
     '</td></tr><tr><td>Escapement</td><td>' +itemsSourse[itemsOrder[itemId]][6]+
-    '</td></tr><tr><td>Winding</td><td>'+itemsSourse[itemsOrder[itemId]][7]+'</td></tr></tbody></table></div>'
-    );
+    '</td></tr><tr><td>Winding</td><td>'+itemsSourse[itemsOrder[itemId]][7]+'</td></tr></tbody></table></p></div></div>');
 }
 }
 }
 assignItems();
+
+
 function filter(s){
     let cont = document.getElementById("filter"+s);
     console.log(cont.innerHTML);
