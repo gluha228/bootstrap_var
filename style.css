@@ -12,18 +12,12 @@
     border-left:rgb(184, 121, 4) solid 1px;
     border-right:rgb(184, 121, 4) solid 1px;
 }
-.collection-item img {
-    height: 100%;
-    width: 100%;
-}
+
 .collection-item table, tr, td {
     border: #ccc 2px solid;
     border-collapse: collapse;
 }
 
-.collection-item tr {
-    height: 80%;
-}
 .collection-item a, h3 {
     font-size: 160%;
     color: rgb(184, 121, 4) !important;
@@ -31,63 +25,30 @@
     cursor: pointer;
     padding: 0%;
     margin: 0%;
+    margin-bottom: 1%;
     font-size: 130%;
 }
 .collection-item h3:hover {
     text-decoration: underline rgb(204, 141, 44);
     color: rgb(204, 141, 44);
 }
+
 .card-body {
     padding-top: 0%;
 }
 
-.filter-pad {
-    border:rgb(184, 121, 4) solid 1px;
-    width: 200px;
-    background-color: #555;
-}
-.filter-pad .filter-title {
-    border: none;
-    color:rgb(184, 121, 4);
-    font-weight: bold;
-}
-.filter-pad .filter {
-    border:rgb(184, 121, 4) solid 1px;
-    width: 100%;
-    height: 80%;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-}
-.filter-pad .filter:hover {
-    
-    background-color: #888
-}
-
-
 
 footer {
-    position: fixed;
-    bottom:0px;
-    left:0px;
-    height: 20px;
-    width: 110%;
-    vertical-align: center ;
-    background-color: #444;
-    color: #aaa;
-    display:grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "a b c";
-    grid-column-gap: 50px;
-    border-top: rgb(184, 121, 4) 2px  solid;
-}
-footer div{
+    padding: 2.5rem 0;
+    color: #727272;
     text-align: center;
-    vertical-align: center;
-    margin: 5px;
-    font-size: 10px;
+    background-color: #f9f9f9;
+    border-top: 0.05rem solid rgb(184, 121, 4);
 }
 
-h2, h3 {
-    color: rgb(184, 121, 4);
+.main-content {
+    top: 50px;
+    background-color: #fff;
+    color: #222;
+    padding-left: 20px;
 }
